@@ -161,13 +161,22 @@ const resolvers = {
     },
 
     uploadImgDataUrl: (_, { imgData }) => {
-
       const time = new Date().toISOString()
+      const downloadsFolder = './downloads';
 
-      fs.writeFileSync(`./downloads/${time}.png`, new Buffer(imgData.replace("data:image/png;base64,", "")), 'base64')
+      try {
+        if ( !fs.existsSync(downloadsFolder) ) {
+          fs.mkdirSync(downloadsFolder);
+        }
+        fs.writeFileSync(`./downloads/${time}.png`, new Buffer(imgData.replace("data:image/png;base64,", "")), 'base64')
 
-      return {
-        success: true
+        return {
+          success: true
+        }
+      } catch {
+        return {
+          success: false
+        }
       }
     }
   },
