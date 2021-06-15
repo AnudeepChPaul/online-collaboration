@@ -1,0 +1,33 @@
+.App-header {
+    width: 50rem;
+    padding: 1rem;
+    background-color: #b3e5fc;
+    border-radius: 0.25rem;
+    margin: 1.5rem auto 1rem;
+    display: flex;
+    line-height: 2;
+}
+
+.avatar {
+    color: #ffffff;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.header-eraser-button, .header-save-button {
+    height: 2rem;
+    width: 5rem;
+    background-color: #4a148c;
+    border: none;
+    color: #ffffff;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    right: 3rem;
+    margin-left: auto;
+}
+
+.header-save-button {
+    right: 9rem;
+}

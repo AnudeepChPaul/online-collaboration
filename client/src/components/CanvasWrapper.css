@@ -1,0 +1,30 @@
+.js-2d-canvas {
+    height: 36rem;
+    width: 36rem;
+}
+
+.collaboration-wrapper {
+    width: 50rem;
+    margin: 6rem auto 0;
+    background-color: #cfd8dc;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.canvas-parent-el {
+    height: 36rem;
+    width: 36rem;
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 0.25rem;
+}
+
+.canvas-toolbar-parent-el {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
